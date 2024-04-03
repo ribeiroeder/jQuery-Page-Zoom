@@ -28,7 +28,7 @@
 			// set up
 		    init : function( options ) {
 
-				if($.type(options) == 'object'){ // if an object with options was sent, merge it with settings
+				if(typeof options === 'object') { // if an object with options was sent, merge it with settings
 
 					settings = $.extend( settings, options);
 
